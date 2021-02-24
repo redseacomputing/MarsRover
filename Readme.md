@@ -39,3 +39,17 @@ Output: 0.24 0.96 28.65
 -[ ] Should calculate x and y coordinates
 -[ ] Should calculate direction of the mars rover ( 0 to 360 degrees )
 
+#### Thinking:
+From Wheelbase and SteeringAngle it is possible to get the radius
+
+Die Formel eines Kreises lautet --->  f(x) = x^2 + y^2
+
+Für den Kreisbogen rechnet man den anteiligen Winkel Alpha durch 360 * pi * r *2 --> (Alpha/360)*pi*2*r <br>
+NewDirection = (dist * 360) / (2 * r * pi)
+
+Kreismittelpunkt ist M((x-r)^2 + y^2) wenn SteeringAngle positiv
+Kreismittelpunkt ist M((x+r)^2 + y^2) wenn SteeringAngle negativ (oder x Koordinate mal minus 1?)
+
+
+Die Position von x und y ergibt sich aus dem Teilumfang des Kreises der zurückgelegten Strecke
+Die Richtung des Rovers ergibt sich aus dem Anstieg des Punktes auf x und y Koordinate
