@@ -17,23 +17,27 @@ class Level1Test {
     void shouldReturn2From30() {
         assertEquals(2d, obj.calculateTurnRadiusFrom(1d, 30d));
     }
-    
-    @Disabled
+
+
     @Test
     void From13_76() {
-        assertEquals(2d, obj.calculateTurnRadiusFrom(1d, 13.76d));
+        assertEquals(4.2d, obj.calculateTurnRadiusFrom(1d, 13.76d));
     }
 
-    @Disabled
+
     @Test
     void From2_34() {
-        assertEquals(2d, obj.calculateTurnRadiusFrom(1d, 2.34d));
+        assertEquals(24.49d, obj.calculateTurnRadiusFrom(1d, 2.34d));
     }
 
-    @Disabled
+
+    @Test
+    void From90WithOtherWheelBase() {
+        assertEquals(2.45d, obj.calculateTurnRadiusFrom(2.45d, 90d));
+    }
     @Test
     void From90() {
-        assertEquals(2d, obj.calculateTurnRadiusFrom(2.45d, 90d));
+        assertEquals(1.00d, obj.calculateTurnRadiusFrom(1.00d, 90d));
     }
 }
 
