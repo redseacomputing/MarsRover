@@ -51,5 +51,5 @@ Kreismittelpunkt ist M((x-r)^2 + y^2) wenn SteeringAngle positiv
 Kreismittelpunkt ist M((x+r)^2 + y^2) wenn SteeringAngle negativ (oder x Koordinate mal minus 1?)
 
 
-Die Position von x und y ergibt sich aus dem Teilumfang des Kreises der zurückgelegten Strecke
+Die Position von x und y ergibt sich aus dem Teilumfang des Kreises der zurückgelegten Strecke.
 Die Richtung des Rovers ergibt sich aus dem Anstieg des Punktes auf x und y Koordinate
